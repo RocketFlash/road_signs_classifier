@@ -1,0 +1,3 @@
+[submodule "src/SiameseNet"]
+	path = src/SiameseNet
+	url = git@github.com:RocketFlash/SiameseNet.git

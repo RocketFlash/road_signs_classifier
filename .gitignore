@@ -102,3 +102,9 @@ venv.bak/
 
 # mypy
 .mypy_cache/
+
+
+src/encodings/
+src/images/
+src/plots/
+src/weights/
