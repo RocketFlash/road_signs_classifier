@@ -3,12 +3,12 @@ import rospy
 import cv2
 import numpy as np
 from detection_msgs.msg import DetectedObjectsWithImage 
-from SiameseNet.model import SiameseNet
+from SiameseNet.siamese_net.model import SiameseNet
 
 iteration = 0
-model = SiameseNet('SiameseNet/configs/road_signs.yml')
-model.load_model('{}best_model_4.h5'.format(model.weights_save_path))
-model.load_encodings('{}encodings.pkl'.format(model.encodings_path))
+model = SiameseNet()
+model.load_model('weights/road_signs/best_model_4.h5')
+model.load_encodings('encodings/road_signs/encodings.pkl')
 
 def callback(data):
     global model, iteration
